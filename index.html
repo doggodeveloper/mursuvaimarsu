@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mursu">
+        <button class="mursu-button" onclick="mursuSound()">
+            <img src="https://image.spreadshirtmedia.net/image-server/v1/mp/designs/142478501,width=178,height=178/mursu.png"> 
+        </button>
+    </div>
+    <div class="marsu">
+        <button class="marsu-button" onclick="marsuSound()">
+            <img src="https://png2.kisspng.com/20180329/qje/kisspng-guinea-pig-care-hamster-mouse-guinea-pig-5abdad4d22e6d7.292500331522380109143.png">
+        </button>
+    </div>
+    <script>
+        var marsu = new Audio("app-14.mp3");
+        var marsuSound = function() {
+            marsu.play();
+        }
+
+        var mursu = new Audio("Wrong-answer-sound-effect.mp3");
+
+        var mursuSound = function() {
+            mursu.play();
+        }
+        
+    </script>
+</body>
+</html>

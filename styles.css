@@ -1,0 +1,118 @@
+body {
+    background: black;
+    margin: 0;
+}
+
+.mursu, .marsu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mursu {
+    background-color: #ff4f4f;
+}
+
+.marsu {
+    background-color: #459c45;
+}
+
+img {
+    height: auto;
+    max-width: 300px;
+}
+.mursu-button, .marsu-button {
+    height: 100vh;
+    max-height: 50vh;
+}
+
+.mursu-button:focus {
+    max-height: 100vh;
+}
+
+.marsu-button:focus {
+    max-height: 100vh;
+    transform: translateY(-50vh);
+    background: #459c45;
+    width: 100vw;
+    background-image: url('https://media1.tenor.com/images/449087b17a320748c11111ab746f19be/tenor.gif?itemid=11347430');
+}
+
+.marsu-button:after {
+    content: 'HYVÄ, VOITIT PELIN!';
+    font-size: 40px;
+    display: none;
+    color: white;
+    font-weight: bold;
+}
+.marsu-button:focus:after {
+    display: block;
+}
+
+.mursu-button:after {
+    content: 'HÄVISIT PELIN!';
+    font-size: 20px;
+    display: none;
+}
+.mursu-button:focus:after {
+    display: block;
+}
+.mursu-button:before {
+    content: '👎';
+    font-size: 20vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 20vh;
+    transform: rotate(180deg) translateX(-100vw) scale(0);
+    transition: all .7s ease;
+    z-index: 1000;
+}
+.marsu-button:before {
+    content: '👍';
+    font-size: 20vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 20vh;
+    transform: rotate(-180deg) translateX(-100vw) scale(0);
+    transition: all .7s ease;
+    z-index: 1000;
+}
+.marsu-button:focus img, .mursu-button:focus img {
+    transition: all .5s ease;
+    transform: scale(1.2);
+    animation: spin 2s linear infinite;
+}
+
+.mursu-button:focus img {
+    filter: invert(100%);
+}
+.marsu-button:focus:before, .mursu-button:focus:before {
+    transform: rotate(0) translateX(0) scale(1);
+    max-height: 100vh;
+}
+
+button {
+    background: transparent;
+    border: 0px;
+}
+
+button:focus {
+    outline: none;
+    border: 0px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
