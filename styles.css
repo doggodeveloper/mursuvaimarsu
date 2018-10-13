@@ -31,6 +31,7 @@ img {
     max-height: 100vh;
     user-select: none;
     overflow: hidden;
+    width: 100vw;
 }
 
 .marsu-button:focus {
@@ -88,12 +89,16 @@ img {
     transition: all .7s ease;
     z-index: 1000;
 }
-.marsu-button:focus img, .mursu-button:focus img {
+.marsu-button:focus img {
     transition: all .5s ease;
     transform: scale(1.2);
     animation: spin 2s linear infinite;
 }
 
+.mursu-button:focus img { 
+    transition: all .2s;
+    transform: scale(6);
+}
 .mursu-button:focus img {
     filter: invert(100%);
 }
