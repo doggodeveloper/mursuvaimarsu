@@ -29,6 +29,8 @@ img {
 
 .mursu-button:focus {
     max-height: 100vh;
+    user-select: none;
+    overflow: hidden;
 }
 
 .marsu-button:focus {
@@ -37,6 +39,8 @@ img {
     background: #459c45;
     width: 100vw;
     background-image: url('https://media1.tenor.com/images/449087b17a320748c11111ab746f19be/tenor.gif?itemid=11347430');
+    user-select: none;
+    overflow: hidden;
 }
 
 .marsu-button:after {
