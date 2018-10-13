@@ -1,0 +1,12 @@
+{
+  "name": "Mursu vai marsu",
+  "short_name": "MVM",
+  "theme_color": "#000000",
+  "background_color": "#00f7ff",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": null,
+  "splash_pages": null
+}
